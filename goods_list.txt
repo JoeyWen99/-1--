@@ -1,0 +1,7 @@
+M00000 ipad 100.0 discription U00000 2021-4-5 Off_Shelf
+M00001 airpods 100.0 M_discription U00001 2021-4-5 On_Shelf
+M00002 iphone 100.0 nicemike U00002 2021-4-5 Sold
+M00003 apple_watch 100.0 niectea U00003 2021-4-5 On_Shelf
+M00004 大力丸 99.0 一天学24h U00000 2021-4-5 On_shelf
+M00005 ipod_touch 100.0 discription U00000 2021-4-5 Off_Shelf
+M00006 macbook 22.0 aaa U00008 2021-4-11 On_Shelf
