@@ -111,7 +111,6 @@ void Administrator::Goods_Init()
 		goods_list.push_back(temp);
 		temp.mess_board.clear();
 	}
-ssss
 	ifs.close();
 }
 
