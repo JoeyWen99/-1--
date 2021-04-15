@@ -1,7 +1,6 @@
-M00000 airpods 999.0 best_earphone U00000 2021-4-15 Off_Shelf 4
-wjy:我有学生证 wjy:请你不要不要不识好歹 wjy:对不起其实我是好人 User:不要吵了,爷送你们一人一个 M00001 iphone12_Pro_Max 999.0 iphone U00000 2021-4-15 Off_Shelf 1
-wyf:买什么12,知不知道王守义说过13香 M00002 ipad 88.0 best_ipad_ever U00001 2021-4-15 Off_Shelf 1
-wjy:你好我是学生,请问可以免费送给我吗? M00003 《人生智慧录》 23.0 叔本华经典 U00000 2021-4-15 Sold 1
-wyf:是说人生不是痛苦就是无聊的那个叔本华吗? M00004 airpod_pro 1399.0 这个价格还不够香吗 U00000 2021-4-15 Off_Shelf 2
-wyf:1200出吗? wyf:我出邮费 M00005 sony 999.0 索尼大法好 U00001 2021-4-15 Sold 0
-M00006 大力丸 100.0 吃了一天学24小时 U00004 2021-4-15 Off_Shelf 0
+M00000 airpods 999.0 best_earphone U00000 2021-4-15 On_Shelf 3
+wjy:我有学生证 wjy:请你不要不要不识好歹 wjy:对不起其实我是好人 M00001 iphone12_Pro_Max 999.0 iphone U00000 2021-4-15 On_Shelf 1
+wyf:买什么12,知不知道王守义说过13香 M00002 ipad 88.0 best_ipad_ever U00001 2021-4-15 On_Shelf 1
+wjy:你好我是学生,请问可以免费送给我吗? M00003 《人生智慧录》 23.0 叔本华经典 U00000 2021-4-15 On_Shelf 1
+wyf:是说人生不是痛苦就是无聊的那个叔本华吗? M00004 airpod_pro 1399.0 这个价格还不够香吗 U00000 2021-4-15 On_Shelf 2
+wyf:1200出吗? wyf:我出邮费 M00005 sony 999.0 索尼大法好 U00001 2021-4-15 On_Shelf 0
