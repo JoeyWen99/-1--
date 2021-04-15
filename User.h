@@ -27,6 +27,9 @@ public:
 	void Show_Goods_Description();
 	void User_info();
 	void Recharge();
+	void Add_mess(vector<string> &mess_board);//∏¯¡Ù—‘∞ÂÃÌº”¡Ù—‘
+	void check_mess_board();
+
 	//void Show_My_Buy_Bill_list();
 	bool operator==(const User U);
 private:

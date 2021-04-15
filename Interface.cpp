@@ -1,4 +1,5 @@
 #include "Interface.h"
+#include <limits>
 
 int Interface::Boot_UI_Menu()//显示开机界面
 {
@@ -18,7 +19,9 @@ int Interface::Boot_UI_Menu()//显示开机界面
 	cout << "输入操作: ";
 	cin >> op;
 	while (op < 1 || op > 4) {
+		cin.clear();
 		cout << "请输入1-4: ";
+		cin.ignore(1024, '\n');
 		cin >> op;
 	}
 	return op;
@@ -36,7 +39,9 @@ int Interface::Adimin_Menu()
 	cout << "输入操作: ";
 	cin >> op;
 	while (op < 1 || op > 7) {
+		cin.clear();
 		cout << "请输入1-7: ";
+		cin.ignore(1024, '\n');
 		cin >> op;
 	}
 	return op;
@@ -54,7 +59,9 @@ int Interface::User_Menu()
 	cout << "输入操作: ";
 	cin >> op;
 	while (op < 1 || op > 4) {
+		cin.clear();
 		cout << "请输入1-4: ";
+		cin.ignore(1024, '\n');
 		cin >> op;
 	}
 	return op;
@@ -62,7 +69,7 @@ int Interface::User_Menu()
 
 int Interface::Im_Buyer_Menu()
 {
-	int op;
+	int op = 0;
 
 	cout << "========================================================================================" << endl;
 	cout << "1.查看商品列表 2.购买商品 3.搜索商品 4.查看历史订单 5.查看商品详细信息 6.返回用户主界面" << endl;
@@ -72,7 +79,9 @@ int Interface::Im_Buyer_Menu()
 	cout << "输入操作: ";
 	cin >> op;
 	while (op < 1 || op > 6) {
+		cin.clear();
 		cout << "请输入1-6: ";
+		cin.ignore(1024, '\n');
 		cin >> op;
 	}
 	return op;
@@ -82,14 +91,16 @@ int Interface::Im_Saler_Menu()
 	int op = 0;
 
 	cout << "======================================================================================" << endl;
-	cout << "1.发布商品 2.查看我的发布 3.修改我的发布 4.下架我的发布 5.查看历史订单 6.返回用户主界面" << endl;
+	cout << "1.发布商品 2.查看我的发布 3.修改我的发布 4.下架我的发布 5.查看历史订单 6.查看所有发布商品的留言板 7.返回用户主界面" << endl;
 	cout << "======================================================================================" << endl;
 	cout << endl;
 	cout << endl;
 	cout << "输入操作: ";
 	cin >> op;
-	while (op < 1 || op > 6) {
-		cout << "请输入1-6: ";
+	while (op < 1 || op > 7) {
+		cin.clear();
+		cout << "请输入1-7: ";
+		cin.ignore(1024, '\n');
 		cin >> op;
 	}
 	return op;
@@ -106,7 +117,9 @@ int Interface::User_Info_Menu()
 	cout << "输入操作: ";
 	cin >> op;
 	while (op < 1 || op > 4) {
+		cin.clear();
 		cout << "请输入1-4: ";
+		cin.ignore(1024, '\n');
 		cin >> op;
 	}
 	return op;

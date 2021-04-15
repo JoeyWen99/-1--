@@ -86,7 +86,12 @@ void User::Im_Saler()
 			clear_screen();
 			break;
 		}
-		case 6: {//6.返回用户主界面
+		case 6: {//6.查看所有商品的留言
+			check_mess_board();
+			clear_screen();
+			break;
+		}
+		case 7: {//7.返回用户主界面
 			clear_screen();
 			return;
 		}
@@ -432,6 +437,13 @@ void User::Show_Goods_Description()
 		cout << setw(15) << left << "卖家ID: " << setw(15) << left << it->Saler_ID << endl;
 		cout << setw(15) << left << "商品状态: " << setw(15) << left << it->state << endl;
 		cout << "****************************" << endl;
+		cout << "全部留言:" << endl;
+		for (vector<string>::iterator i = it->mess_board.begin(); i != it->mess_board.end(); i++) {
+			cout << *i << endl;
+		}
+		cout << "****************************" << endl;
+		Add_mess(it->mess_board);
+		//it->num_of_mess = (int)it->mess_board.size();
 		return;
 	}
 	else
@@ -496,6 +508,42 @@ void User::Recharge()
 			return;
 		}
 
+	}
+}
+
+void User::Add_mess(vector<string> &mess_board)
+{
+	int op = 0;
+	cout << "是否需要添加新的留言:1.是 2.不是 : ";
+	cin >> op;
+	cin.clear();
+	if (op == 1) {
+		cout << "请在下面输入你要增添的新留言:" << endl;
+		string temp;
+		cin >> temp;
+		cin.clear();
+		temp = this->name + ":" + temp;
+		mess_board.push_back(temp);
+		cout << "留言成功!" << endl;
+		admin.Save2File(2);
+		return;
+	}
+	else
+	{
+		return;
+	}
+}
+
+void User::check_mess_board()
+{
+	for (int i = 0; i < (int)My_Sale_Goods_list.size(); i++) {
+		if (My_Sale_Goods_list[i].state == "On_Shelf") {
+			cout << My_Sale_Goods_list[i].name << ":" << endl;
+			for (int j = 0; j < (int)My_Sale_Goods_list[i].mess_board.size(); j++) {
+				cout << My_Sale_Goods_list[i].mess_board[j] << endl;
+			}
+			cout << "************" << endl;
+		}
 	}
 }
 

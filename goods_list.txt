@@ -1,7 +1,6 @@
-M00000 ipad 100.0 discription U00000 2021-4-5 Off_Shelf
-M00001 airpods 100.0 M_discription U00001 2021-4-5 On_Shelf
-M00002 iphone 100.0 nicemike U00002 2021-4-5 Sold
-M00003 apple_watch 100.0 niectea U00003 2021-4-5 On_Shelf
-M00004 大力丸 99.0 一天学24h U00000 2021-4-5 On_shelf
-M00005 ipod_touch 100.0 discription U00000 2021-4-5 Off_Shelf
-M00006 macbook 22.0 aaa U00008 2021-4-11 On_Shelf
+M00000 airpods 999.0 best_earphone U00000 2021-4-15 On_Shelf 3
+wjy:我有学生证 wjy:请你不要不要不识好歹 wjy:对不起其实我是好人 M00001 iphone12_Pro_Max 999.0 iphone U00000 2021-4-15 On_Shelf 1
+wyf:买什么12,知不知道王守义说过13香 M00002 ipad 88.0 best_ipad_ever U00001 2021-4-15 On_Shelf 1
+wjy:你好我是学生,请问可以免费送给我吗? M00003 《人生智慧录》 23.0 叔本华经典 U00000 2021-4-15 On_Shelf 1
+wyf:是说人生不是痛苦就是无聊的那个叔本华吗? M00004 airpod_pro 1399.0 这个价格还不够香吗 U00000 2021-4-15 On_Shelf 2
+wyf:1200出吗? wyf:我出邮费 M00005 sony 999.0 索尼大法好 U00001 2021-4-15 On_Shelf 0

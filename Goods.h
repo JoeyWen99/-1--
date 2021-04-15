@@ -1,8 +1,9 @@
 #pragma once
 #include"Tool_fun.h"
+#include<vector>
 #include<string>
 using namespace std;
-enum Goods_State { Sold, Off_shelf, On_shelf };
+//enum Goods_State { Sold, Off_Shelf, On_Shelf };
 
 class Goods
 {
@@ -16,5 +17,7 @@ public:
 	string Saler_ID;
 	string time;
 	string state;
+	int num_of_mess;
+	vector<string> mess_board;
 };
 

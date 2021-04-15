@@ -40,14 +40,17 @@ void Administrator::Save2File(int num)//将三个总表中的信息,写入文件
 			for (int i = 0; i < (int)goods_list.size(); i++) {
 				ofs << goods_list[i].id << " " << goods_list[i].name << " "
 					<< fixed << setprecision(1) << goods_list[i].price << " " <<goods_list[i].description<<" "
-					<< goods_list[i].Saler_ID << " " << goods_list[i].time << " " << goods_list[i].state << endl;
+					<< goods_list[i].Saler_ID << " " << goods_list[i].time << " " << goods_list[i].state << " " << (int)goods_list[i].mess_board.size() << endl;
+				for (int j = 0; j < (int)goods_list[i].mess_board.size(); j++) {
+					ofs << goods_list[i].mess_board[j] << " ";
+				}
 			}
 			ofs.close();
 			return;
 		}
 		case 3: {
 			ofstream ofs;
-			ofs.open(BILL_FILE, ios::out);//写商品列表文件
+			ofs.open(BILL_FILE, ios::out);//写订单列表文件
 			for (int i = 0; i < (int)bill_list.size(); i++) {
 				ofs << bill_list[i].Bill_ID << " " << bill_list[i].Goods_ID << " "
 					<< fixed << setprecision(1) << bill_list[i].price << " " << bill_list[i].time<<" "
@@ -98,9 +101,15 @@ void Administrator::Goods_Init()
 	Goods temp;
 	while (ifs >> temp.id && ifs >> temp.name && ifs >>
 		temp.price && ifs >> temp.description && ifs >>
-		temp.Saler_ID && ifs >> temp.time && ifs>>temp.state)//7项数据 
+		temp.Saler_ID && ifs >> temp.time && ifs >> temp.state && ifs >> temp.num_of_mess)//8项数据 
 	{
+		for (int i = 0; i < temp.num_of_mess; i++) {
+			string mess;
+			ifs >> mess;
+			temp.mess_board.push_back(mess);
+		}
 		goods_list.push_back(temp);
+		temp.mess_board.clear();
 	}
 
 	ifs.close();
@@ -547,6 +556,12 @@ void Administrator::Admin_Login()//管理员登录
 				return;
 			}
 		}
+	}
+	else
+	{
+		cout << "密码错误" << endl;
+		clear_screen();
+		return;
 	}
 }
 void Administrator::Admin_Logout()
